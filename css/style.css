@@ -1,104 +1,221 @@
-/* ========= CONFIGURAÇÕES GERAIS ======== */
+/* =====================================================
+   CONFIGURAÇÕES GERAIS (usado em todas as páginas)
+===================================================== */
 
-/* Estilo global do CORPO DA PÁGINA */
+/* ================= BODY ================= */
+/* Aqui definimos o “padrão geral” do site inteiro */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão do site */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento interno */
-    color: #222; /* Define a cor do texto */
-    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte principal do site */
+    margin: 0;                                 /* Remove a margem automática do navegador */
+    padding: 0;                                /* Remove o espaçamento interno padrão */
+    color: #222;                               /* Define a cor padrão dos textos */
+    background-color: #fff;                    /* Define a cor de fundo (branco) */
 
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;                         /* Faz o site ocupar no mínimo toda a altura da tela */
+    display: flex;                             /* Ativa o modo Flexbox */
+    flex-direction: column;                    /* Organiza os elementos em coluna (um abaixo do outro) */
 }
 
 
-/* Estilo aplicado aos TÍTULOS (h1,h2,h3) */
-h1,h2,h3 {
-    color: #1a4db3;
-    text-align: center;
+/* ================= TÍTULOS ================= */
+/* Padroniza a aparência de todos os títulos */
+h1, h2, h3 {
+    color: #1a4db3;        /* Cor azul principal do projeto */
+    text-align: center;    /* Centraliza os títulos na tela */
 }
 
-/* Estilo dos parágrafos */
+
+/* ================= PARÁGRAFOS ================= */
+/* Ajusta a leitura dos textos */
 p {
-    line-height: 1.6; /* Altura das linhas */
-    margin: 10px; /* Espaçamento entre paragrafos */
+    line-height: 1.6;      /* Aumenta o espaçamento entre linhas para melhorar a leitura */
+    margin: 10px;          /* Cria um pequeno espaço ao redor dos parágrafos */
 }
 
-/* ======= CABEÇALHO E MENU ========= */
+
+
+/* =====================================================
+   COMPONENTES FIXOS (aparecem em todas as páginas)
+===================================================== */
+
+/* ================= HEADER ================= */
+/* Estiliza a parte superior do site (cabeçalho) */
 header {
     background-color: #1a4db3; /* Fundo azul */
-    color:#fff; /* Texto branco */
-    padding: 20px; /* Espaçamento vertical */
+    color: #fff;              /* Texto branco */
+    padding: 20px;            /* Espaçamento interno */
 }
 
-/* Logo principal do site */
+
+/* ================= LOGO ================= */
+/* Estiliza o nome do site */
 .logo a {
-    text-decoration: none; /* Remover sublinhado do link*/
-    color:#fff; /* Cor do texto */
-    font-size: 20px; /* Tamanho da fonte */
-    font-weight: bold; /* Destaque em negrito */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff;           /* Mantém o texto branco */
+    font-size: 20px;       /* Aumenta o tamanho da fonte */
+    font-weight: bold;     /* Deixa o texto em negrito */
 }
 
-/* Destaque da palavra "Educa" */
-.logo span{
-    color:darkorange; /* Cor de texto laranja */
+/* Destaca uma parte do nome (ex: Educa) */
+.logo span {
+    color: darkorange; /* Aplica uma cor diferente para dar destaque */
 }
 
-/* Container do MENU */
+
+/* ================= MENU ================= */
+/* Centraliza os links do menu */
 .menu {
-    text-align: center; /* Centraliza os links */
-    margin-top: 10px; /* Espaçamento superior */
-}
-
-/* Estilo dos links do menu */
-.menu a {
-    color:#fff; /* Texto do link branco */
-    text-decoration: none; /* Tira sublinhado do link */
-    margin: 15px; /* Espaço lateral */
-    font-weight: bold; /* Texto em negrito */
-}
-
-.menu a:hover{
-    color:darkorange; /* Muda de cor ao passar o mouse */
-}
-
-
-/* ======= SEÇÃO PRINCIPAL ======== */
-/* Área de destaque superior */
-.hero {
-    background-color: #f5f5f5; /* Funco cinza claro */
-    text-align: center; /* Alinha texto no centro */
-    padding: 60px 20px; /* Espaçamento interno */
-}
-
-/* Título da hero */
-.hero h1 {
-    font-size: 35px; /* Tamanho grande */
-    color:#1a4db3; /* Título Azul */
-}
-
-/* Parágrafo da hero */
-.hero p {
-    font-size: 18px; /* Aumenta o tamanho */
-    margin-bottom: 20px; /* Espaço abaixo */
-}
-
-/* RODAPÉ */
-/* Área inferior fixa na página */
-footer{
-    background-color:#1a4db3;
-    color:#f5f5f5;
     text-align: center;
-    padding: 20px;
+    margin-top: 10px; /* Espaço entre logo e menu */
+}
+
+/* Estiliza os links do menu */
+.menu a {
+    color: #fff;             /* Cor branca */
+    text-decoration: none;   /* Remove sublinhado */
+    margin: 15px;            /* Espaço entre os links */
+    font-weight: bold;       /* Deixa em negrito */
+}
+
+/* Efeito quando passa o mouse */
+.menu a:hover {
+    color: darkorange; /* Muda a cor ao passar o mouse */
+}
+
+
+/* ================= TOPO ================= */
+/* Organiza logo e menu lado a lado */
+.topo {
+    display: flex;                  /* Ativa layout flexível */
+    justify-content: space-between; /* Coloca um de cada lado */
+    align-items: center;            /* Alinha verticalmente */
+    padding: 10px;
+}
+
+
+/* =====================================================
+   RODAPÉ (parte inferior do site)
+===================================================== */
+
+/* Define a aparência do rodapé */
+footer {
+    background-color: #1a4db3; /* Fundo azul */
+    color: #f5f5f5;            /* Texto claro */
+    text-align: center;        /* Centraliza conteúdo */
+    padding: 20px;             /* Espaçamento interno */
     font-size: 14px;
 
-    margin-top: auto; /* empurra o rodapé para baixo automaticamente. */
+    margin-top: auto;          /* Faz o rodapé ficar sempre no final da página */
 }
 
-/* Links dentro do Rodapé */
-footer a{
-    color: darkgoldenrod; /* Texto laranja */
-    text-decoration: none; /* Sem sublinhado */
+/* Estiliza os links do rodapé */
+footer a {
+    color: darkgoldenrod; /* Cor diferente para destacar */
+    text-decoration: none;
+}
+
+
+
+/* =====================================================
+   ESTILIZAÇÃO POR PÁGINA
+===================================================== */
+
+/* =====================================================
+   HOME / INÍCIO (index.html)
+===================================================== */
+
+/* Seção principal de destaque da página inicial */
+.hero {
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    text-align: center;        /* Centraliza o conteúdo */
+    padding: 60px 20px;        /* Espaçamento interno maior */
+}
+
+/* Título principal da página inicial */
+.hero h1 {
+    font-size: 35px;     /* Aumenta bastante o tamanho */
+    color: #1a4db3;      /* Azul padrão do site */
+}
+
+/* Texto explicativo da página inicial */
+.hero p {
+    font-size: 18px;      /* Texto um pouco maior */
+    margin-bottom: 20px;  /* Espaço abaixo do texto */
+}
+
+
+
+/* =====================================================
+   CURSOS (cursos.html)
+===================================================== */
+
+/* Container que organiza os cards */
+.cards {
+    display: flex;   /* Coloca os cards lado a lado */
+    gap: 20px;       /* Espaço entre eles */
+}
+
+/* Estilo individual de cada card */
+.card {
+    flex: 1;              /* Faz todos ocuparem o mesmo espaço */
+    padding: 20px;        /* Espaço interno */
+    background: #fff;     /* Fundo branco */
+    border-radius: 8px;   /* Bordas arredondadas */
+}
+
+/* Área central do conteúdo do curso */
+.curso {
+    max-width: 600px; /* Limita a largura */
+    margin: 0 auto;   /* Centraliza na tela */
+    padding: 20px;    /* Espaçamento interno */
+    background: #fff;
+    border-radius: 8px;
+}
+
+
+
+/* =====================================================
+   CONTATO (contato.html)
+===================================================== */
+
+/* Organização do formulário */
+form {
+    max-width: 500px;       /* Limita largura do formulário */
+    margin: auto;           /* Centraliza */
+    display: flex;          /* Ativa flexbox */
+    flex-direction: column; /* Coloca os campos um abaixo do outro */
+    gap: 10px;              /* Espaço entre os campos */
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE (adaptação para telas menores)
+===================================================== */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Coloca os cards um abaixo do outro */
+    }
+
+    .topo {
+        flex-direction: column; /* Organiza cabeçalho em coluna */
+        gap: 10px;
+    }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Diminui o tamanho do título */
+    }
+
+    p {
+        font-size: 16px; /* Diminui o texto */
+    }
+
+    form {
+        padding: 0 10px; /* Dá um respiro nas laterais */
+    }
 }
