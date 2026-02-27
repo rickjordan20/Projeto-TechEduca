@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "título":"Técnico em Desenvolvimento de Sistemas",
+        "nível":"Técnico",
+        "cargaHorária":1200,
+        "descricao": "Aprenda WEB, banco de dados e projetos"
+    },
+
+    {
+        "id":2,
+        "título":"Programador de internet",
+        "nível":"Qualificação",
+        "cargaHorária":200,
+        "descricao": "HTML, CSS e JavaScript na prática"  
+    }
+]
