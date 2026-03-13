@@ -43,7 +43,7 @@ function renderizarCursos(lista){
     listaCursos.innerHTMl="";
 
     // para cada curso da lista, cria um card
-    lista.array.forEach((curso) => {
+    lista.forEach((curso) => {
         // cria uma element/tag DIV
         const card = document.createElement("div");
 
@@ -57,7 +57,7 @@ function renderizarCursos(lista){
             <p> ${curso.desc} </p>
             <p><strong>CH: <strong> ${curso.ch}  </p>
             <a href=${curso.url}>
-            <button class="btn-detalhes>Ver Detalhes</button>
+            <button class="btn-detalhes">Ver Detalhes</button>
             </a>
         `;
         // coloca o card dentro da lista
@@ -77,7 +77,7 @@ buscaCursos.addEventListener("input",function(){
     const texto = buscaCursos.value.toLowerCase();
 
     const filtrados = cursos.filter((curso) => 
-        curso.título.toLowerCase().include(texto)
+        curso.título.toLowerCase().includes(texto)
     );
 
     renderizarCursos(filtrados);
