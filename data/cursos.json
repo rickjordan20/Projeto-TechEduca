@@ -1,19 +1,24 @@
 [
     {
-        "id":1,
-        "título":"Técnico em Desenvolvimento de Sistemas",
-        "nível":"Técnico",
-        "img":"../imagens/curso1.jpg",
-        "cargaHorária":1200,
-        "descricao": "Aprenda WEB, banco de dados e projetos"
+        "título":"Desenvolvimento Web",
+        "img": "../imagens/curso1.jpg",
+        "desc": "Aprenda HTML, CSS, JavaScript e práticas modernas de desenvolvimento.",
+        "ch":40,
+        "url":"curso-desenvolvimento-web.html"
     },
-
     {
-        "id":2,
-        "título":"Programador de internet",
-        "nível":"Qualificação",
-        "img":"../imagens/curso2.jpg",
-        "cargaHorária":200,
-        "descricao": "HTML, CSS e JavaScript na prática"  
+        "título":"Informática Básica",
+        "img": "../imagens/curso2.jpg",
+        "desc": "Domine o uso do computador e aplicativos essenciais.",
+        "ch":30,
+        "url":"curso-informatica-basica.html"
+    },
+    {
+        "título":"Design Gráfico",
+        "img": "../imagens/design.jpg",
+        "desc": "Domine edição de foto e vídeo em nível profissional",
+        "ch":80,
+        "url":"curso-design-grafico.html"
     }
+
 ]
