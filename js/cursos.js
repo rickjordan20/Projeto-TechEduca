@@ -40,7 +40,7 @@ async function carregarCursos(){
 */
 function renderizarCursos(lista){
     // limpa o conteúdo na tela antes de desenhar de novo
-    listaCursos.innerHTMl="";
+    listaCursos.innerHTML="";
 
     // para cada curso da lista, cria um card
     lista.forEach((curso) => {
